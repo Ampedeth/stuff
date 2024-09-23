@@ -1,3 +1,5 @@
+// Login script part
+
 let loginForm = document.querySelector(".my-form");
 
 loginForm.addEventListener("submit", (e) => {
@@ -8,3 +10,7 @@ loginForm.addEventListener("submit", (e) => {
   console.log("Email:", email.value);
   console.log("Password:", password.value);
 });
+
+
+
+// Sign up script part

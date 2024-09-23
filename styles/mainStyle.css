@@ -20,69 +20,65 @@ body {
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
     height: 100vh;
-    padding: 1rem;
+    padding: 16px;
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     background: var(--violet);
-    background: -webkit-linear-gradient(to right, var(--violet),
-            var(--primary-dark));
-    background: linear-gradient(to right, var(--violet),
-            var(--primary-dark));
+    background: -webkit-linear-gradient(to right, var(--violet), var(--primary-dark));
+    background: linear-gradient(to right, var(--violet), var(--primary-dark));
 }
 
-/*Form styles*/
+/* Form styles */
 
 .my-form {
     display: flex;
     flex-direction: column;
     justify-content: start;
     position: relative;
-    gap: 1rem;
+    gap: 16px;
     background-color: var(--white);
     width: 100%;
-    max-width: 32rem;
-    padding: 3rem 2rem;
-    border-radius: 2rem;
+    max-width: 512px;
+    padding: 48px 32px;
+    border-radius: 32px;
     height: fit-content;
 }
 
 .welcome-row {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .welcome-message {
-    max-width: 24rem;
+    max-width: 384px;
 }
 
 .logo {
-    height: 7rem;
+    height: 112px;
     margin: 0 auto;
 }
-
 
 /* input wrapper */
 .input__wrapper {
     position: relative;
-    padding: 0.9375rem 0 0;
-    margin-bottom: 0.5rem;
+    padding: 15px 0 0;
+    margin-bottom: 8px;
 }
 
 .input__field {
-    font-size: 1.5rem;
+    font-size: 24px;
     color: var(--text);
-    padding: 0.375rem 0;
-    padding-right: 2rem;
-    padding-bottom: 0.5rem;
-    line-height: 2rem;
-    height: 2rem;
+    padding: 6px 0;
+    padding-right: 32px;
+    padding-bottom: 8px;
+    line-height: 32px;
+    height: 32px;
     outline: 0;
     border: 0;
     width: 100%;
     vertical-align: middle;
-    padding-bottom: 0.7rem;
+    padding-bottom: 11px;
     border-bottom: 3px solid var(--secondary);
     background: transparent;
     transition: border-color 0.2s;
@@ -92,7 +88,6 @@ body {
     color: transparent;
 }
 
-
 .input__label {
     user-select: none;
 }
@@ -100,16 +95,16 @@ body {
 .input__field:placeholder-shown~.input__label {
     cursor: text;
     color: var(--text);
-    top: 0.8rem;
-    font-size: 1.2rem;
+    top: 12px;
+    font-size: 19px;
 }
 
 .input__label,
 .input__field:focus~.input__label {
     position: absolute;
-    top: -0.8rem;
+    top: -12px;
     display: block;
-    font-size: 1.2rem;
+    font-size: 19px;
     color: var(--text);
     transition: 0.3s;
 }
@@ -126,14 +121,14 @@ body {
     stroke: var(--primary);
 }
 
-/*Input Icons*/
+/* Input Icons */
 .input__icon {
     position: absolute;
-    right: -0.875rem;
-    bottom: -0.6875rem;
-    width: 2.25rem;
-    height: 2.25rem;
-    padding: 0.125rem;
+    right: -14px;
+    bottom: -12px;
+    width: 36px;
+    height: 36px;
+    padding: 2px;
     transform: translate(-50%, -50%);
     transform-origin: center;
 }
@@ -146,53 +141,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
-    line-height: 3.125rem;
+    margin-top: 16px;
+    line-height: 50px;
     outline: none;
-    font-size: 1.125rem;
-    letter-spacing: .025rem;
+    font-size: 18px;
+    letter-spacing: 0.4px;
     text-decoration: none;
     cursor: pointer;
     font-weight: 800;
-    min-height: 3.125rem;
+    min-height: 50px;
     width: 100%;
-    border-radius: 10rem;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
+    border-radius: 160px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }
 
 .my-form__button:hover {
     background-color: var(--primary-dark);
 }
 
-
-
-/*Socials*/
+/* Socials */
 
 .socials-row {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
 .socials-row img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
 }
 
 .socials-row>a {
-    padding: 0.5rem;
-    border-radius: 10rem;
+    padding: 8px;
+    border-radius: 160px;
     width: 100%;
-    min-height: 3rem;
+    min-height: 48px;
     display: flex;
-    gap: 0.75rem;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 18px;
     color: var(--text);
-    padding: 0.5rem;
+    padding: 8px;
     background-color: var(--social-background);
     font-weight: 700;
 }
@@ -208,8 +201,8 @@ body {
     flex-direction: column;
     align-self: center;
     color: var(--secondary);
-    gap: 1rem;
-    margin-top: 0.5rem;
+    gap: 16px;
+    margin-top: 8px;
 }
 
 .my-form__actions button {
@@ -227,6 +220,6 @@ body {
 
 .my-form__row {
     display: flex;
-    gap: 0.5rem;
+    gap: 8px;
     justify-content: space-between;
 }
