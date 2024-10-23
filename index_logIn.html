@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/auth-styles.css">
 </head>
 
 <body>
@@ -27,14 +27,14 @@
 
         <!-- Email Input Field -->
         <div class="input__wrapper">
-            <input type="email" id="email" name="email" class="input__field" placeholder="Your Email" required>
+            <input type="email" id="email" name="email" class="input__field" placeholder="Your Email" required autocomplete="email">
             <label for="email" class="input__label">Email:</label>
             <img src="img/email.svg" class="input__icon" alt="Email Icon">
         </div>
 
         <!-- Password Input Field -->
         <div class="input__wrapper">
-            <input id="password" type="password" class="input__field" placeholder="Your Password"
+            <input id="password" name="password" type="password" class="input__field" placeholder="Your Password"
                 title="Minimum 6 characters at least 1 Alphabet and 1 Number"
                 pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
             <label for="password" class="input__label">Password</label>
@@ -62,6 +62,6 @@
     </form>
 
 
-    <script src="scripts/signIn.js"></script>
+    <script src="scripts/mainScript.js"></script>
 </body>
 </html>
