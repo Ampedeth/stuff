@@ -22,10 +22,10 @@
         exit();
     }
 
-   setcookie('user', $user['name'], time() + 3600, "/");
+   setcookie('user', $user['name'], time() + (10 * 365 * 24 * 60 * 60), "/");
 
     $mysql->close();
 
-    header('Location: /index.html')
+    header('Location: /index.php')
 
 ?>

@@ -10,8 +10,7 @@
     $name = filter_var(trim($_POST['name']),
     FILTER_SANITIZE_SPECIAL_CHARS);
 
-    $pass = filter_var(trim($_POST['password']),
-    FILTER_SANITIZE_STRING);
+    $pass = filter_var(trim($_POST['password']));
 
 
     if (mb_strlen($name) < 3 || mb_strlen($name) > 50) {
@@ -23,11 +22,11 @@
 
     $mysql = new mysqli('localhost', 'root', 'root', 'college');
 
-    $mysql->query("INSERT INTO `users` (`login`, `pass`, `name`)
+    $mysql->query("INSERT INTO `users` (`email`, `pass`, `name`)
     VALUES('$email', '$pass', '$name')");
 
     $mysql->close();
 
-    header('Location: /index.html')
+    header('Location: /index.php')
 
 ?>

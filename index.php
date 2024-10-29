@@ -15,8 +15,18 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#" id="about-us-btn">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="index_logIn.html">Login</a></li>
+                        <?php
+                        if (!isset($_COOKIE['user']) || $_COOKIE['user'] == ''):
+                         ?>
+
+                        <li><a href="index_logIn.html">Login</a></li>
+
+                        <?php else:?>
+                            
+                            <li><a href="#">Account</a></li>
+                            <li><a href="php/exit.php">Sign out</a></li>
+                            
+                        <?php endif;?>
                 </ul>
             </nav>
         </div>
